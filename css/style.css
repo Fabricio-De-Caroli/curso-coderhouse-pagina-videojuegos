@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background-image: url(../img/36779.jpg);
+    background-size: cover;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+.liContainer{
+    display: flex;
+    width: 50%;
+    height: 4rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.liContainer li{
+    list-style: none;
+}
+.liContainer li a{
+    text-decoration: none;
+    color: white;
+}
+.h1Color{
+    color: cornflowerblue;
+    font-family: 'Ysabeau', sans-serif;
+    font-size: 2rem;
+}
+body{
+    background-image: url(../img/36779.jpg);
+    background-size: cover;
+    top: 5rem;
+    color: white;
+    font-family:'Pathway Extreme', sans-serif; 
+}
+.carousel-inner{
+    width: 75rem;
+    height: 35rem;
+}
+.textCenter{
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-right: 10px;
+}
+.card-body{
+    width: 40rem;
+    background-color: white;
+}
+.borderImg{
+    width: 75rem;
+    height: 35rem;
+}
+.borderImgLG{
+    width: 40rem;
+    height: 20rem;
+}
+.textRigth{
+    margin: 1rem;
+    width: 40rem;
+} 
+.sectionNews{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.sectionLastgames{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.sectionFlex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.sectionFlex img{
+    width: 40rem;
+    height: 20rem;
+}
+.sectionFlex p{
+    width: 40rem;
+}
+iframe{
+    width: 40rem;
+}
+/* Footer */
+footer h2{
+    display: inline;
+    margin: 1rem;
+    text-decoration: none;
+    color: white;
+}
+.navMobile{
+    display: none;
+}
+@media screen and (max-width:1024px) {
+    .liContainer{
+        width: 100%;
+    }
+    .carousel-inner{
+        width: 50rem;
+        height: 25rem;
+    }
+    .borderImg{
+        width: 50rem;
+        height: 25rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .navDesktop{
+        display: none;
+    }
+    .navMobile{
+        display: block;
+        background-image: url(../img/36779.jpg);
+    }
+    .navMobile div a{
+        color: white;
+        text-decoration: none;
+    }
+    .carousel-inner{
+        width: 30rem;
+        height: 15rem;
+    }
+    .borderImg{
+        width: 30rem;
+        height: 15rem;
+    }
+    .borderImgLG{
+        width: 30rem;
+        height: 15rem;
+    }
+    .card-body{
+        width: 30rem;
+    }
+}
+@media screen and (max-width:425px) {
+    
+}
