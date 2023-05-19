@@ -15,6 +15,7 @@
     height: 4rem;
     justify-content: space-between;
     align-items: center;
+    padding-left: 0px;
 }
 .liContainer li{
     list-style: none;
@@ -25,15 +26,16 @@
 }
 .h1Color{
     color: cornflowerblue;
-    font-family: 'Ysabeau', sans-serif;
+    font-family: 'Ysabeau',sans-serif;
     font-size: 2rem;
+    font-weight: bold;
 }
 body{
     background-image: url(../img/36779.jpg);
     background-size: cover;
     top: 5rem;
     color: white;
-    font-family:'Pathway Extreme', sans-serif; 
+    font-family:'Pathway Extreme', sans-serif !important; 
 }
 .carousel-inner{
     width: 75rem;
@@ -95,6 +97,9 @@ footer h2{
 }
 .navMobile{
     display: none;
+}
+.navbar-toggler{
+    background-color: white;
 }
 @media screen and (max-width:1024px) {
     .liContainer{
