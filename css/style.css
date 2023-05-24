@@ -92,32 +92,20 @@ iframe{
     width: 40rem;
 }
 /* Footer */
-footer div{
-    display: inline-block;
+.footerInline{
+    display: flex;
+    flex-direction: row;
 }
-.divCenter{
+.divSpace{
     display: flex;
     justify-content: space-around;
     margin-top: 5rem;
-}
-footer p{
-    display: block;
-    margin: 1rem;
-    text-decoration: none;
-    color: white;
-    font-size: small;
-}
-footer h2{
-    font-size: medium;
 }
 footer a{
     color: white;
     text-decoration: none;
 }
-footer a:hover{
-    color:cornflowerblue;
-}
-footer p{
+.pContainer{
     width: 20rem;
 }
 /* Responsividad */
@@ -169,8 +157,17 @@ footer p{
         width: 30rem;
     }
 }
-@media screen and (max-width:425px) {
-    
+@media screen and (max-width:576px) {
+    .sectionFlex img{
+        width: 20rem;
+        height: 10rem;
+    }
+    .sectionFlex p{
+        width: 20rem;
+    }
+    iframe{
+        width: 20rem;
+    }
 }
 .socialmediaIcon{
     width: 2rem;
