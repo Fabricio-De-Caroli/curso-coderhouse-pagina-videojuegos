@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- WebTitle -->
     <title>E-sport</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
     <!-- Google fonts -->
@@ -21,7 +24,7 @@
 <body>
     <!--Navegation bar-->
     <header class="header">
-        <nav>
+        <nav class="navDesktop">
             <ul class="liContainer">
                 <li><a href="../index.html" class="ulContainer"><h1 class="h1Color">This4Gamers</h1></a></li>
                 <li><a href="./shooter-Page.html" class="ulContainer">Shooters</a></li>
@@ -30,26 +33,48 @@
                 <li><a href="./e-sport-Page.html" class="ulContainer">E-sport</a></li>
             </ul>
         </nav>
-    </header> 
+        <nav class="navbar navbar-expand-lg bg-body-tertiary navMobile">
+            <div class="container-fluid">
+                <a href="../index.html" class="ulContainer"><h1 class="h1Color">This4Gamers</h1></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a href="./shooter-Page.html" class="ulContainer">Shooters</a>
+                        <a href="./sandbox-Page.html" class="ulContainer">Sandboxs</a>
+                        <a href="./race-and-sport-Page.html" class="ulContainer">Race and Sport</a>
+                        <a href="./e-sport-Page.html" class="ulContainer">E-sport</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
     <Main>
-        <section class="sectionFlex">
-            <h2>Valorant</h2>
-            <img class="borderImg" src="../img/840_560.jpeg" alt="Valorant's image">
-            <p>Valorant, the famous game which riot develops and nowadays is the direct competitor of Counter strick,
-            both game are so much played by the community of e-sport around the world</p>
-            <div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/BrgG_dLEJ4s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <section class="sectionFlex">
+                        <h2>Valorant</h2>
+                        <img class="borderImg" src="../img/840_560.jpeg" alt="Valorant's image">
+                        <p>Valorant, the famous game which riot develops and nowadays is the direct competitor of Counter strick,
+                        both game are so much played by the community of e-sport around the world</p>
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/BrgG_dLEJ4s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </section>
+                    <section class="sectionFlex">
+                        <h2>League of Legends</h2>
+                        <img class="borderImg" src="../img/UNYVC3MXWBCDZB63W6NLY4XG4U.jpg" alt="League of legend image">
+                        <p>League of legends is a moba game in which you have to destroy the nexus of you enemy to win, 
+                        this game is one of the more toxics game that I personaly have ever seen</p>
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/9dnaAmY3pSM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </section>
+                </div>
             </div>
-        </section>
-        <section class="sectionFlex">
-            <h2>League of Legends</h2>
-            <img class="borderImg" src="../img/UNYVC3MXWBCDZB63W6NLY4XG4U.jpg" alt="League of legend image">
-            <p>League of legends is a moba game in which you have to destroy the nexus of you enemy to win, 
-            this game is one of the more toxics game that I personaly have ever seen</p>
-            <div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/9dnaAmY3pSM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-        </section>
+        </div>
     </Main>
     <footer>
         <div class="navDesktop divSpace">
@@ -88,5 +113,8 @@
             </div>
         </div>
     </footer>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>

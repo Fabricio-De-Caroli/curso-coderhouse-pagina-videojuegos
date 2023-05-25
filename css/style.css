@@ -53,6 +53,14 @@ body{
     width: 40rem;
     background-color: white;
 }
+.sectionNews{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card{
+    width: 40.1rem;
+}
 .borderImg{
     width: 75rem;
     height: 35rem;
@@ -65,15 +73,9 @@ body{
     margin: 1rem;
     width: 40rem;
 } 
-.sectionNews{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-.sectionLastgames{
+.sectionLastgames div{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-around !important;
 }
 .sectionFlex{
     display: flex;
@@ -115,7 +117,7 @@ footer a{
 .navbar-toggler{
     background-color: white;
 }
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1200px) {
     .liContainer{
         width: 100%;
     }
@@ -126,6 +128,36 @@ footer a{
     .borderImg{
         width: 50rem;
         height: 25rem;
+    }   
+}
+@media screen and (max-width:992px){
+    .carousel-inner{
+        width: 40rem;
+        height: 20rem;
+    }
+    .borderImg{
+        width: 40rem;
+        height: 20rem;
+    }
+    .borderImgLG{
+        width: 40rem;
+        height: 20rem;
+    }
+    .card{
+        width: 40.1rem;
+    }
+    .card-body{
+        width: 40rem;
+    }
+    .sectionFlex img{
+        width: 35rem;
+        height: 17rem;
+    }
+    .sectionFlex p{
+        width: 35rem;
+    }
+    iframe{
+        width: 35rem;
     }
 }
 
@@ -153,11 +185,32 @@ footer a{
         width: 30rem;
         height: 15rem;
     }
+    .card{
+        width: 30.1rem;
+    }
     .card-body{
         width: 30rem;
     }
 }
 @media screen and (max-width:576px) {
+    .carousel-inner{
+        width: 25rem;
+        height: 13rem;
+    }
+    .borderImg{
+        width: 25rem;
+        height: 13rem;
+    }
+    .borderImgLG{
+        width: 25rem;
+        height: 13rem;
+    }
+    .card{
+        width: 25.1rem;
+    }
+    .card-body{
+        width: 25rem;
+    }
     .sectionFlex img{
         width: 20rem;
         height: 10rem;
