@@ -1,0 +1,16 @@
+.sectionFlex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    img{
+        width: 40rem;
+        height: 20rem;
+    }
+    p{
+        width: 40rem;
+    }
+}
+iframe{
+    width: 40rem;
+}
