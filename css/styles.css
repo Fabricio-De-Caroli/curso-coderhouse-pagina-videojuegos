@@ -22,6 +22,10 @@
 
 .card {
   width: 40.1rem;
+  transition: transform 1.5s;
+}
+.card:hover {
+  transform: scale(1.1);
 }
 
 .borderImg {
@@ -44,6 +48,36 @@
   justify-content: space-around;
 }
 
+.hudBar {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.hudBar div {
+  display: flex;
+  justify-content: center;
+  width: 800px;
+  height: 500px;
+}
+.hudBar div a {
+  display: flex;
+  justify-content: center;
+  width: 800px;
+  height: 500px;
+}
+.hudBar div a img {
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: 0.5s ease;
+}
+.hudBar div a img:hover {
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+
 .sectionFlex {
   display: flex;
   flex-direction: column;
@@ -60,11 +94,6 @@
 
 iframe {
   width: 40rem;
-}
-
-* {
-  margin: 0;
-  padding: 0;
 }
 
 .header {
@@ -107,25 +136,6 @@ iframe {
 
 .navbar-toggler {
   background-color: white;
-}
-
-body {
-  background-image: url(../img/36779.jpg);
-  background-size: cover;
-  top: 5rem;
-  color: white;
-  font-family: "Pathway Extreme", sans-serif !important;
-}
-
-.footerInline {
-  display: flex;
-  flex-direction: row;
-}
-
-.divSpace {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 5rem;
 }
 
 footer a {
@@ -243,6 +253,29 @@ footer a {
   iframe {
     width: 20rem;
   }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(../img/36779.jpg);
+  background-size: cover;
+  top: 5rem;
+  color: white;
+  font-family: "Pathway Extreme", sans-serif !important;
+}
+
+.footerInline {
+  display: flex;
+  flex-direction: row;
+}
+
+.divSpace {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

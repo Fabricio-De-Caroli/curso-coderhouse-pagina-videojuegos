@@ -18,6 +18,10 @@
 }
 .card{
     width: 40.1rem;
+    transition: transform 1.5s;
+    &:hover{
+        transform: scale(1.1);
+    }
 }
 .borderImg{
     width: 75rem;
@@ -35,5 +39,35 @@
     div{
         display: flex;
         justify-content: space-around;
+    }
+}
+.hudBar{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    div{
+        display: flex;
+            justify-content: center;
+            width: 800px;
+            height: 500px;
+        a{
+            display: flex;
+            justify-content: center;
+            width: 800px;
+            height: 500px;
+                img{
+                    width: 0px;
+                    flex-grow: 1;
+                    object-fit: cover;
+                    opacity: .8;
+                    transition: 0.5s ease;
+                    &:hover{
+                            width: 300px;
+                            opacity: 1;
+                            filter: contrast(120%);
+                            
+                    }
+                }
+        }
     }
 }
