@@ -21,7 +21,7 @@
 }
 
 .card {
-  width: 40.1rem;
+  width: 40rem;
   transition: transform 1.5s;
 }
 .card:hover {
@@ -192,6 +192,35 @@ footer a {
   iframe {
     width: 35rem;
   }
+  .hudBar {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .hudBar div {
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    height: 300px;
+  }
+  .hudBar div a {
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    height: 300px;
+  }
+  .hudBar div a img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: 0.5s ease;
+  }
+  .hudBar div a img:hover {
+    width: 200px;
+    opacity: 1;
+    filter: contrast(120%);
+  }
 }
 @media screen and (max-width: 768px) {
   .navDesktop {
@@ -222,6 +251,35 @@ footer a {
   }
   .card-body {
     width: 30rem;
+  }
+  .hudBar {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .hudBar div {
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 250px;
+  }
+  .hudBar div a {
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 250px;
+  }
+  .hudBar div a img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: 0.5s ease;
+  }
+  .hudBar div a img:hover {
+    width: 150px;
+    opacity: 1;
+    filter: contrast(120%);
   }
 }
 @media screen and (max-width: 576px) {

@@ -1,3 +1,5 @@
+$width-img-text: 40rem;
+
 .carousel-inner{
     width: 75rem;
     height: 35rem;
@@ -8,7 +10,7 @@
     margin-right: 10px;
 }
 .card-body{
-    width: 40rem;
+    width: $width-img-text;
     background-color: white;
 }
 .sectionNews{
@@ -17,7 +19,7 @@
     justify-content: space-around;
 }
 .card{
-    width: 40.1rem;
+    width: $width-img-text;
     transition: transform 1.5s;
     &:hover{
         transform: scale(1.1);
@@ -28,12 +30,12 @@
     height: 35rem;
 }
 .borderImgLG{
-    width: 40rem;
+    width: $width-img-text;
     height: 20rem;
 }
 .textRigth{
     margin: 1rem;
-    width: 40rem;
+    width: $width-img-text;
 }
 .sectionLastgames{
     div{

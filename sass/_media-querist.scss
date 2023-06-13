@@ -1,3 +1,8 @@
+$width-img-text-992px: 40rem;
+$height-img-text-992px: 20rem;
+$width-img-text-768px: 30rem;
+$height-img-text-768px: 15rem;
+
 @media screen and (max-width:1200px) {
     .liContainer{
         width: 100%;
@@ -13,19 +18,19 @@
 }
 @media screen and (max-width:992px){
     .carousel-inner{
-        width: 40rem;
-        height: 20rem;
+        width: $width-img-text-992px;
+        height: $height-img-text-992px;
     }
     .borderImg{
-        width: 40rem;
-        height: 20rem;
+        width: $width-img-text-992px;
+        height: $height-img-text-992px;
     }
     .borderImgLG{
-        width: 40rem;
-        height: 20rem;
+        width: $width-img-text-992px;
+        height: $height-img-text-992px;
     }
     .card-body{
-        width: 40rem;
+        width: $width-img-text-992px;
     }
     .sectionFlex{
         img{
@@ -38,6 +43,36 @@
     }
     iframe{
         width: 35rem;
+    }
+    .hudBar{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        div{
+            display: flex;
+                justify-content: center;
+                width: 600px;
+                height: 300px;
+            a{
+                display: flex;
+                justify-content: center;
+                width: 600px;
+                height: 300px;
+                    img{
+                        width: 0px;
+                        flex-grow: 1;
+                        object-fit: cover;
+                        opacity: .8;
+                        transition: 0.5s ease;
+                        &:hover{
+                                width: 200px;
+                                opacity: 1;
+                                filter: contrast(120%);
+                                
+                        }
+                    }
+            }
+        }
     }
 }
 @media screen and (max-width:768px) {
@@ -55,22 +90,52 @@
         }
     }
     .carousel-inner{
-        width: 30rem;
-        height: 15rem;
+        width: $width-img-text-768px;
+        height: $height-img-text-768px;
     }
     .borderImg{
-        width: 30rem;
-        height: 15rem;
+        width: $width-img-text-768px;
+        height: $height-img-text-768px;
     }
     .borderImgLG{
-        width: 30rem;
-        height: 15rem;
+        width: $width-img-text-768px;
+        height: $height-img-text-768px;
     }
     .card{
         width: 30.1rem;
     }
     .card-body{
-        width: 30rem;
+        width: $width-img-text-768px;
+    }
+    .hudBar{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        div{
+            display: flex;
+                justify-content: center;
+                width: 400px;
+                height: 250px;
+            a{
+                display: flex;
+                justify-content: center;
+                width: 400px;
+                height: 250px;
+                    img{
+                        width: 0px;
+                        flex-grow: 1;
+                        object-fit: cover;
+                        opacity: .8;
+                        transition: 0.5s ease;
+                        &:hover{
+                                width: 150px;
+                                opacity: 1;
+                                filter: contrast(120%);
+                                
+                        }
+                    }
+            }
+        }
     }
 }
 @media screen and (max-width:576px) {
