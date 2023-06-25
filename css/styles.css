@@ -25,7 +25,7 @@
   transition: transform 1.5s;
 }
 .card:hover {
-  transform: scale(1.1);
+  transform: scale(1.06);
 }
 
 .borderImg {
@@ -76,6 +76,10 @@
   width: 300px;
   opacity: 1;
   filter: contrast(120%);
+}
+
+.marginTitle {
+  margin-top: 10px;
 }
 
 .sectionFlex {
@@ -284,22 +288,22 @@ footer a {
 }
 @media screen and (max-width: 576px) {
   .carousel-inner {
-    width: 25rem;
-    height: 13rem;
+    width: 20rem;
+    height: 10rem;
   }
   .borderImg {
-    width: 25rem;
-    height: 13rem;
+    width: 20rem;
+    height: 10rem;
   }
   .borderImgLG {
-    width: 25rem;
-    height: 13rem;
+    width: 20rem;
+    height: 10rem;
   }
   .card {
-    width: 25.1rem;
+    width: 20.1rem;
   }
   .card-body {
-    width: 25rem;
+    width: 20rem;
   }
   .sectionFlex img {
     width: 20rem;
@@ -310,6 +314,35 @@ footer a {
   }
   iframe {
     width: 20rem;
+  }
+  .hudBar {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .hudBar div {
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 200px;
+  }
+  .hudBar div a {
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 200px;
+  }
+  .hudBar div a img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: 0.5s ease;
+  }
+  .hudBar div a img:hover {
+    width: 150px;
+    opacity: 1;
+    filter: contrast(120%);
   }
 }
 * {

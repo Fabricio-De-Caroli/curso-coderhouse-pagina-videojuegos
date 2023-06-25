@@ -140,22 +140,22 @@ $height-img-text-768px: 15rem;
 }
 @media screen and (max-width:576px) {
     .carousel-inner{
-        width: 25rem;
-        height: 13rem;
+        width: 20rem;
+        height: 10rem;
     }
     .borderImg{
-        width: 25rem;
-        height: 13rem;
+        width: 20rem;
+        height: 10rem;
     }
     .borderImgLG{
-        width: 25rem;
-        height: 13rem;
+        width: 20rem;
+        height: 10rem;
     }
     .card{
-        width: 25.1rem;
+        width: 20.1rem;
     }
     .card-body{
-        width: 25rem;
+        width: 20rem;
     }
     .sectionFlex{
         img{
@@ -168,5 +168,35 @@ $height-img-text-768px: 15rem;
     }
     iframe{
         width: 20rem;
+    }
+    .hudBar{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        div{
+            display: flex;
+                justify-content: center;
+                width: 350px;
+                height: 200px;
+            a{
+                display: flex;
+                justify-content: center;
+                width: 350px;
+                height: 200px;
+                    img{
+                        width: 0px;
+                        flex-grow: 1;
+                        object-fit: cover;
+                        opacity: .8;
+                        transition: 0.5s ease;
+                        &:hover{
+                                width: 150px;
+                                opacity: 1;
+                                filter: contrast(120%);
+                                
+                        }
+                    }
+            }
+        }
     }
 }

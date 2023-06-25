@@ -22,7 +22,7 @@ $width-img-text: 40rem;
     width: $width-img-text;
     transition: transform 1.5s;
     &:hover{
-        transform: scale(1.1);
+        transform: scale(1.06);
     }
 }
 .borderImg{
@@ -72,4 +72,7 @@ $width-img-text: 40rem;
                 }
         }
     }
+}
+.marginTitle{
+    margin-top: 10px;
 }
